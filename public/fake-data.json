@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "How to get your first job as a self-taught programmer",
+    "author_name": "Hasan Ali",
+    "cover_image": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1680189639~exp=1680190239~hmac=770f3317dc6021458a3638dfafc9ae1fc9b0f53e5590427a74b99f1882a00bc8",
+    "author_image": "https://img.freepik.com/free-photo/blonde-young-businesswoman-\twriting-diary-with-pen-office_23-2148029077.jpg?w=740&t=st=1680189736~exp=1680190336~hmac=ac5067637c77b62dc0190c19b52f078ebda7debf03e7c6b3a9d9be2c54f7bf23",
+    "read_time": 8,
+    "published": "10/02/2020"
+  },
+  {
+    "id": 1,
+    "title": "How to get your first job as a self-taught programmer",
+    "author_name": "Lizam ",
+    "cover_image": "https://as2.ftcdn.net/v2/jpg/02/93/06/85/1000_F_293068579_c0qT1fZv4qLmVSeskOPEmXMTz8P0Agtd.jpg",
+    "author_image": "https://img.freepik.com/free-photo/blonde-young-businesswoman-\twriting-diary-with-pen-office_23-2148029077.jpg?w=740&t=st=1680189736~exp=1680190336~hmac=ac5067637c77b62dc0190c19b52f078ebda7debf03e7c6b3a9d9be2c54f7bf23",
+    "read_time": 8,
+    "published": "02/12/2023"
+  },
+  {
+    "id": 1,
+    "title": "How to get your first job as a self-taught programmer",
+    "author_name": "Mim Mim",
+    "cover_image": "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=740&t=st=1680190177~exp=1680190777~hmac=268b60f4bb06a758f876147a0ea6c09d7d7ebfbec8b5be0952ad6aac82894097",
+    "author_image": "https://img.freepik.com/free-photo/blonde-young-businesswoman-\twriting-diary-with-pen-office_23-2148029077.jpg?w=740&t=st=1680189736~exp=1680190336~hmac=ac5067637c77b62dc0190c19b52f078ebda7debf03e7c6b3a9d9be2c54f7bf23",
+    "read_time": 8,
+    "published": "15/08/2019"
+  },
+  {
+    "id": 1,
+    "title": "How to get your first job as a self-taught programmer",
+    "author_name": "Tonima ",
+    "cover_image": "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?w=740&t=st=1680190294~exp=1680190894~hmac=9f356465a5208982873cfd03e80a20b3ffea8035f757e057abbd82508d5bbb72",
+    "author_image": "https://img.freepik.com/free-photo/blonde-young-businesswoman-\twriting-diary-with-pen-office_23-2148029077.jpg?w=740&t=st=1680189736~exp=1680190336~hmac=ac5067637c77b62dc0190c19b52f078ebda7debf03e7c6b3a9d9be2c54f7bf23",
+    "read_time": 8,
+    "published": "22/07/2022"
+  }
+  
+]
