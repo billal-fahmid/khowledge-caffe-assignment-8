@@ -10,7 +10,9 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-     
+      <button class="btn btn-active btn-secondary">Button</button>
+      <button class="btn btn-active btn-accent">Button</button>
+
     </div>
   )
 }
