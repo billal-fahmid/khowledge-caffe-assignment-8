@@ -3,7 +3,7 @@ import SingleCard from '../SingleCard/SingleCard';
 
 const Home = () => {
     const [datas, setDatas] = useState([]);
-    console.log(datas)
+    // console.log(datas)
     useEffect(() =>{
         fetch('fake-data.json')
             .then(res => res.json())
