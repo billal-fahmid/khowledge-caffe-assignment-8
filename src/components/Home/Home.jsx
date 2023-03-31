@@ -43,7 +43,7 @@ const Home = () => {
         }
         bookMarks.find(titlee => {
             if(titlee=== title){
-                toast("Wow so easy!");
+                toast("It's Again Added!");
             }
         })
         
