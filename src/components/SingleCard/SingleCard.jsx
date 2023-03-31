@@ -21,22 +21,24 @@ const SingleCard = (props) => {
                         <div className='flex'>
                             <h3>{read_time} min Read
                             </h3>
-                            <p className='ml-2'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
-                            </svg>
-                            </p>
+                            <button onClick={() => props.handleBookMarks(title)} className='ml-2'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
+                                </svg>
+                            </button>
+
                         </div>
                     </div>
 
                     <h2 className='text-2xl font-bold text-start'>
                         {title}
                     </h2>
-                    
+
                     <div className='text-start ml-0 pl-0'>
-                    <button onClick={() =>props.handleReadTime(read_time)} className="btn btn-active btn-link pl-0">Mark as read</button>
+                        <button onClick={() => props.handleReadTime(read_time)} className="btn btn-active btn-link pl-0">Mark as read</button>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>

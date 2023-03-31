@@ -5,14 +5,16 @@ import SingleCard from '../SingleCard/SingleCard';
 const Home = () => {
     const [datas, setDatas] = useState([]);
     const [readTime, setReadTime] = useState(0);
-    console.log(readTime)
+    const [bookMarks, setBookMarks] = useState([])
+
     useEffect(() =>{
         fetch('fake-data.json')
             .then(res => res.json())
             .then(data => setDatas(data))
     },[])
+
+
     let previousReadTime =0;
-   
     const handleReadTime = (time) =>{
         previousReadTime = readTime;
         if(!previousReadTime){
@@ -24,20 +26,30 @@ const Home = () => {
            const newTotalTime = previousReadTime + time;
             setReadTime(newTotalTime)
         }
-        
-     
+       
     }
-  
+    let previousBookMarks =[]
+    const handleBookMarks =(title)=>{
+        previousBookMarks = bookMarks;
+        if(!previousBookMarks){
+            previousBookMarks= title;
+            setBookMarks(previousBookMarks)
+        }else{
+            const newBooksMarks =  [...previousBookMarks,title]
+            setBookMarks(newBooksMarks)
+        }
+    }
+  console.log(bookMarks)
     return (
         <div>
             <div className="main-container md:flex gap-5 mt-12">
                 <div className="blogs w-[70%] ">
                     {
-                        datas.map(data => <SingleCard data={data} handleReadTime={handleReadTime}></SingleCard>)
+                        datas.map(data => <SingleCard data={data} handleReadTime={handleReadTime} handleBookMarks={handleBookMarks}></SingleCard>)
                     }
                 </div>
                 <div className="side-card w-[30%] ">
-                    <SideCard readTime={readTime}></SideCard>
+                    <SideCard readTime={readTime} bookMarks={bookMarks}></SideCard>
                 </div>
             </div>
         </div>
