@@ -43,12 +43,12 @@ const Home = () => {
     return (
         <div>
             <div className="main-container md:flex gap-5 mt-12">
-                <div className="blogs w-[70%] ">
+                <div className="blogs md:w-[70%] ">
                     {
                         datas.map(data => <SingleCard data={data} handleReadTime={handleReadTime} handleBookMarks={handleBookMarks}></SingleCard>)
                     }
                 </div>
-                <div className="side-card w-[30%] ">
+                <div className="side-card md:w-[30%] sm:mb-40">
                     <SideCard readTime={readTime} bookMarks={bookMarks}></SideCard>
                 </div>
             </div>

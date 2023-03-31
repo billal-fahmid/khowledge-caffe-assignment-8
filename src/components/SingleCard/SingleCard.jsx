@@ -8,7 +8,7 @@ const SingleCard = (props) => {
             <div className="card w-full bg-base-100 shadow-xl mb-10">
                 <figure><img src={cover_image} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <div className='flex items-center justify-between'>
+                    <div className='md:flex items-center md:justify-between'>
                         <div className='flex items-center'>
                             <div className="">
                                 <img className='w-10 h-10 rounded-full' src={author_image} />
@@ -18,7 +18,7 @@ const SingleCard = (props) => {
                                 <p>{published}</p>
                             </div>
                         </div>
-                        <div className='flex'>
+                        <div className='flex sm:justify-between'>
                             <h3>{read_time} min Read
                             </h3>
                             <button onClick={() => props.handleBookMarks(title)} className='ml-2'>

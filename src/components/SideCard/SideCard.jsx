@@ -2,13 +2,13 @@ import React from 'react';
 
 const SideCard = ({ readTime,bookMarks }) => {
     return (
-        <div className='sticky top-0  '>
+        <div className='md:sticky md:top-0  '>
             <button className="btn gap-2 w-full mb-10">
             Spent time on read : 
                 <div className="badge badge-secondary">{readTime} min</div>
             </button>
 
-            <div className="card w-96 bg-base-100 shadow-xl ">
+            <div className="card md:w-96 bg-base-100 shadow-xl ">
                 <h2 className='card-title font-bold pb-5'>Bookmarked Blogs : {bookMarks.length}</h2>
                 <div className="y">
                     {
