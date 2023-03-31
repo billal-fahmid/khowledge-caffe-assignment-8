@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideCard = ({ readTime,bookMarks }) => {
     return (
-        <div className='md:sticky md:top-0  '>
+        <div className='md:sticky md:top-0 sm:pb-40 '>
             <button className="btn gap-2 w-full mb-10">
             Spent time on read : 
                 <div className="badge badge-secondary">{readTime} min</div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SideCard from '../SideCard/SideCard';
 import SingleCard from '../SingleCard/SingleCard';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Home = () => {
     const [datas, setDatas] = useState([]);
@@ -30,6 +31,7 @@ const Home = () => {
     }
     let previousBookMarks =[]
     const handleBookMarks =(title)=>{
+        
         previousBookMarks = bookMarks;
         if(!previousBookMarks){
             previousBookMarks= title;
@@ -38,8 +40,14 @@ const Home = () => {
             const newBooksMarks =  [...previousBookMarks,title]
             setBookMarks(newBooksMarks)
         }
+        bookMarks.find(titlee => {
+            if(titlee=== title){
+                toast("Wow so easy!");
+            }
+        })
+        
     }
-  console.log(bookMarks)
+//   console.log(bookMarks)
     return (
         <div>
             <div className="main-container md:flex gap-5 mt-12">
@@ -53,6 +61,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        
     );
 };
 
